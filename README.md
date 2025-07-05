@@ -18,7 +18,8 @@
 
 In the landscape of MEV (Maximal Extractable Value), detecting malicious actors early is crucial. MEVTrap aims to provide a **public, transparent, and cost-effective** way to identify sandwiching behavior on-chain, where anyone can validate what happened and when.
 
-![ChatGPT Image Jul 4, 2025, 02_06_12 PM.png](attachment:a05144df-c5bb-4b40-8863-326fdd4d4157:ChatGPT_Image_Jul_4_2025_02_06_12_PM.png)
+![Mevtrap](https://github.com/user-attachments/assets/bd7b5b9e-ab4e-4f55-9fbc-d3f70b25c8cc)
+
 
 ---
 
@@ -43,7 +44,7 @@ Tx C: MEV bot sells DAI (after user, captures profit)
 
 ## 💡 What Does MEVTrap Do?
 
-MEVTrap runs as a **trap contract** deployed on Sepolia and watched by Drosera operators. It:
+MEVTrap runs as a **trap contract** deployed on Hoodi and watched by Drosera operators. It:
 
 - Samples the last few blocks (configurable)
 - Looks for patterns matching the A → B → C structure
@@ -69,7 +70,8 @@ User Tx (C) ──►                         ResponseContract logs attacker, vi
 
 It analyzes transaction patterns via `collect()` and emits logs using `handleSandwich(...)` when `shouldRespond()` confirms a pattern.
 
-![ChatGPT Image Jul 4, 2025, 01_23_18 PM.png](attachment:d91b9509-eb84-4661-8203-9ff4daa81a10:ChatGPT_Image_Jul_4_2025_01_23_18_PM.png)
+![Flow Trap](https://github.com/user-attachments/assets/54d0d3c4-e8c9-4412-b1a7-665c6a1bf885)
+
 
 ---
 
@@ -122,7 +124,7 @@ This event can be indexed on a frontend or monitored via [cast call](https://boo
 
 In the Drosera configuration (`drosera.toml`):
 
-- `private_trap = false`: Trap and results are **public**, enabling researchers to monitor MEV activity transparently
+- `private = true`: Trap and results are **public**, enabling researchers to monitor MEV activity transparently
 - `private_trap = true`: Makes it accessible only to whitelisted relayers (for R&D or private networks)
 
 ---
@@ -132,17 +134,17 @@ In the Drosera configuration (`drosera.toml`):
 Clone the repo:
 
 ```bash
-git clone <https://github.com/yourusername/mevtrap.git>
-cd mevtrap
+git clone <https://github.com/Warx04/MEVTrap-POC.git>
+cd MEVTrap-POC
 bun install
-forge test -vvvv
+forge build
 
 ```
 
-Deploy on Sepolia:
+Deploy on Hoodi:
 
 ```bash
-forge script scripts/DeployResponseProtocol.s.sol --rpc-url <https://sepolia.infura.io/v3/YOUR_KEY> --broadcast
+forge script scripts/DeployResponseProtocol.s.sol --rpc-url <https://ethereum-hoodi-rpc.publicnode.com> --broadcast
 
 ```
 
