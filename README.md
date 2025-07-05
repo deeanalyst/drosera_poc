@@ -79,7 +79,7 @@ It analyzes transaction patterns via `collect()` and emits logs using `handleSan
 
 | Layer | Tool/Library |
 | --- | --- |
-| Trap engine | [Drosera Trap SDK](https://github.com/drosera-network/contracts) |
+| Trap engine | [Drosera Trap](https://github.com/drosera-network/contracts) |
 | Blockchain | Hoodi testnet |
 | Contracts | Solidity (0.8.12) |
 | Development Tool | [Foundry](https://book.getfoundry.sh/) |
