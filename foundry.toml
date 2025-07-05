@@ -1,0 +1,8 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["node_modules"]
+
+[env]
+PRIVATE_KEY = "${PRIVATE_KEY}"
+dotenv = ".env"
