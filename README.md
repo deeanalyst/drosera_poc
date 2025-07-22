@@ -38,6 +38,7 @@ This system could later be extended to:
 ⚙️ drosera-trap-config
 Configuration and deployment of the Drosera trap and response system targeting ERC-20 whale activity.
 
+````markdown
 ```[traps.mytrap]
 path = "out/ERC20WhaleTrap.sol/ERC20WhaleTrap.json"
 response_contract = "0x45Fcba9D589602d9a321feA71BF364DB2dabbB78"
@@ -48,6 +49,7 @@ max_number_of_operators = 2
 block_sample_size = 1
 private = true
 whitelist = []```
+````
 
 🧪 Status
 ✅ Contracts deployed
