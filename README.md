@@ -59,6 +59,8 @@ whitelist = []
 address = "0x21ef0984CFda7c9A784A6B2515e8a6656220df86"
 ````
 
+---
+
 🧪 Status
 ✅ Contracts deployed
 
@@ -81,6 +83,8 @@ This project helped me:
 
 - Explore the power of decentralized coordination primitives.
 
+---
+
 💡 Future Enhancements
 🪪 SBTs for Responders
 - Let participants mint soulbound tokens (non-transferable NFTs) when they respond to a trap.
@@ -91,10 +95,14 @@ This project helped me:
 📊 Onchain Metadata Storage
 - Enhance transparency and auditability by recording granular metadata permanently onchain.
 
+---
+
 🧵 Special Note
 This repo is part of my learning journey toward earning Sergeant or Captain status on Drosera. It’s not just about deploying contracts—it's about:
 
 Growth • Learning • Contribution
+
+---
 
 📢 Follow my journey: [@dee__analyst](https://x.com/dee__analyst)
 🌐 Learn more about the network: [@DroseraNetwork](https://x.com/DroseraNetwork)
