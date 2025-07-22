@@ -35,10 +35,10 @@ This system could later be extended to:
 
 ---
 
-## ⚙️ drosera.toml Configuration
+⚙️ drosera-trap-config
+Configuration and deployment of the Drosera trap and response system targeting ERC-20 whale activity.
 
-```toml
-[traps.mytrap]
+```[traps.mytrap]
 path = "out/ERC20WhaleTrap.sol/ERC20WhaleTrap.json"
 response_contract = "0x45Fcba9D589602d9a321feA71BF364DB2dabbB78"
 response_function = "respondWithERC20Context(address,uint256,uint256,int256,int256)"
@@ -49,36 +49,42 @@ block_sample_size = 1
 private = true
 whitelist = []```
 
-## 🧪 Status
+🧪 Status
+✅ Contracts deployed
 
-✅ Contracts deployed  
-✅ Forge-compatible  
-🔶 Not yet tested in a live trap trigger scenario  
+✅ Forge-compatible
+
+🔶 Not yet tested in a live trap trigger scenario
+
 🔧 Tuning may still be needed (e.g., thresholds, response logic)
 
----
-
-## 🧭 Lessons Learned
-
+🧭 Lessons Learned
 This project helped me:
 
-- Understand how Drosera’s trap–response system works.
-- Use Forge, Solc, and command-line tooling more confidently.
-- Work with price feeds, ERC-20 balances, and Solidity struct encoding.
-- Appreciate how onchain coordination systems can be composed securely.
+Gain a solid understanding of Drosera's trap–response mechanism.
 
----
+Improve proficiency with Forge, Solc, and CLI-based workflows.
 
-## 💡 Future Ideas
+Integrate onchain data like price feeds and ERC-20 balances.
 
-- Allow participants to mint SBTs (non-transferable NFTs) after trap triggers.
-- Whitelist responders dynamically using Drosera opt-in.
-- Store more granular metadata permanently onchain.
+Encode/decode structs in Solidity securely.
 
----
+Explore the power of decentralized coordination primitives.
 
-## 🧵 Special Note
+💡 Future Enhancements
+🪪 SBTs for Responders
+Let participants mint soulbound tokens (non-transferable NFTs) when they respond to a trap.
 
-This project is part of my journey to earn the **Sergeant** or **Captain** roles on [Drosera](https://x.com/DroseraNetwork). It’s more than just deploying smart contracts—it's about growth, learning, and meaningful contribution.
+⚪ Dynamic Whitelisting
+Use Drosera’s opt-in mechanism to whitelist trusted responders in real time.
 
-Follow my journey [@dee__analyst](https://x.com/dee__analyst) for updates and reflections or more info about the [@DroseraNetwork](https://x.com/DroseraNetwork).
+📊 Onchain Metadata Storage
+Enhance transparency and auditability by recording granular metadata permanently onchain.
+
+🧵 Special Note
+This repo is part of my learning journey toward earning Sergeant or Captain status on Drosera. It’s not just about deploying contracts—it's about:
+
+Growth • Learning • Contribution
+
+📢 Follow my journey: [@dee__analyst](https://x.com/dee__analyst)
+🌐 Learn more about the network: [@DroseraNetwork](https://x.com/DroseraNetwork)
