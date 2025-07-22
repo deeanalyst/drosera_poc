@@ -39,7 +39,14 @@ This system could later be extended to:
 Configuration and deployment of the Drosera trap and response system targeting ERC-20 whale activity.
 
 ````markdown
-```[traps.mytrap]
+ethereum_rpc = "https://eth-hoodi.g.alchemy.com/v2/-AXQAagLYU0TtShg7SXdBLPNyAVQI1uI"
+drosera_rpc = "https://relay.hoodi.drosera.io"
+eth_chain_id = 560048
+drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
+
+[traps]
+
+[traps.mytrap]
 path = "out/ERC20WhaleTrap.sol/ERC20WhaleTrap.json"
 response_contract = "0x45Fcba9D589602d9a321feA71BF364DB2dabbB78"
 response_function = "respondWithERC20Context(address,uint256,uint256,int256,int256)"
@@ -48,7 +55,8 @@ min_number_of_operators = 1
 max_number_of_operators = 2
 block_sample_size = 1
 private = true
-whitelist = []```
+whitelist = []
+address = "0x21ef0984CFda7c9A784A6B2515e8a6656220df86"
 ````
 
 🧪 Status
@@ -63,25 +71,25 @@ whitelist = []```
 🧭 Lessons Learned
 This project helped me:
 
-Gain a solid understanding of Drosera's trap–response mechanism.
+- Gain a solid understanding of Drosera's trap–response mechanism.
 
-Improve proficiency with Forge, Solc, and CLI-based workflows.
+- Improve proficiency with Forge, Solc, and CLI-based workflows.
 
-Integrate onchain data like price feeds and ERC-20 balances.
+- Integrate onchain data like price feeds and ERC-20 balances.
 
-Encode/decode structs in Solidity securely.
+- Encode/decode structs in Solidity securely.
 
-Explore the power of decentralized coordination primitives.
+- Explore the power of decentralized coordination primitives.
 
 💡 Future Enhancements
 🪪 SBTs for Responders
-Let participants mint soulbound tokens (non-transferable NFTs) when they respond to a trap.
+- Let participants mint soulbound tokens (non-transferable NFTs) when they respond to a trap.
 
 ⚪ Dynamic Whitelisting
-Use Drosera’s opt-in mechanism to whitelist trusted responders in real time.
+- Use Drosera’s opt-in mechanism to whitelist trusted responders in real time.
 
 📊 Onchain Metadata Storage
-Enhance transparency and auditability by recording granular metadata permanently onchain.
+- Enhance transparency and auditability by recording granular metadata permanently onchain.
 
 🧵 Special Note
 This repo is part of my learning journey toward earning Sergeant or Captain status on Drosera. It’s not just about deploying contracts—it's about:
