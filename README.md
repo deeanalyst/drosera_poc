@@ -49,31 +49,36 @@ block_sample_size = 1
 private = true
 whitelist = []
 
-🧪 Status
-✅ Contracts deployed
-✅ Forge-compatible
-🔶 Not yet tested in a live trap trigger scenario
-🔧 Some tuning may be needed (e.g. thresholds, response logic)
+## 🧪 Status
 
-🧭 Lessons Learned
+✅ Contracts deployed  
+✅ Forge-compatible  
+🔶 Not yet tested in a live trap trigger scenario  
+🔧 Tuning may still be needed (e.g., thresholds, response logic)
+
+---
+
+## 🧭 Lessons Learned
+
 This project helped me:
 
-➤ Understand how Drosera's trap–response system works.
+- Understand how Drosera’s trap–response system works.
+- Use Forge, Solc, and command-line tooling more confidently.
+- Work with price feeds, ERC-20 balances, and Solidity struct encoding.
+- Appreciate how onchain coordination systems can be composed securely.
 
-➤ Use forge, solc, and command-line tooling confidently.
+---
 
-➤ Work with price feeds, ERC-20 balances, and Solidity struct encoding.
+## 💡 Future Ideas
 
-➤ Appreciate how onchain coordination systems can be composed securely.
+- Allow participants to mint SBTs (non-transferable NFTs) after trap triggers.
+- Whitelist responders dynamically using Drosera opt-in.
+- Store more granular metadata permanently onchain.
 
-💡 Future Ideas
-➤ Allow participants to mint SBTs after a trap is triggered.
+---
 
-➤ Whitelist responders dynamically using drosera opt-in.
+## 🧵 Special Note
 
-➤ Store more granular metadata on-chain.
+This project is part of my journey to earn the **Sergeant** or **Captain** roles on [Drosera](https://x.com/DroseraNetwork). It’s more than just deploying smart contracts—it's about growth, learning, and meaningful contribution.
 
-🧵 Special Note
-This project is part of my journey to earn the Sergeant or Captain roles on Drosera. It's not just about smart contracts, but the spirit of learning and contribution.
-
-Follow me [@dee__analyst](https://x.com/dee__analyst) for updates and reflections or more info about the [@DroseraNetwork](https://x.com/DroseraNetwork).
+Follow my journey [@dee__analyst](https://x.com/dee__analyst) for updates and reflections or more info about the [@DroseraNetwork](https://x.com/DroseraNetwork).
