@@ -35,7 +35,7 @@ This system could later be extended to:
 
 ---
 
-⚙️ drosera-trap-config
+### ⚙️ `drosera.toml`
 Configuration and deployment of the Drosera trap and response system targeting ERC-20 whale activity.
 
 ````markdown
