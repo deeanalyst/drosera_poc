@@ -21,6 +21,32 @@ This system could later be extended to:
 
 ---
 
+## ⚙️ How It Works
+
+### `collect()`
+
+This function gathers structured data from each block, including:
+
+- `trackedAddress`: The wallet being watched
+- `tokenBalance`: Current token balance of the tracked address
+- `price`: Current Chainlink price
+- `blockTimestamp` and `blockNumber`: Temporal context
+- `operator`: The node/operator collecting the data
+
+### `shouldRespond()`
+
+This function:
+
+- Compares the most recent 2 collected data points
+- Checks if:
+  - The tracked address's token balance changed beyond a defined threshold
+  - The price feed shifted more than allowed
+- If both are true, and the trap is still `active`, it returns `true` and triggers the `respondWithERC20Context(...)` function
+
+Only addresses on the whitelist can operate this trap.
+
+---
+
 ## 🛠️ Smart Contracts
 
 ### 🔐 `ERC20WhaleTrap.sol`
