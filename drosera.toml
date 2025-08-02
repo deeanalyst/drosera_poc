@@ -5,14 +5,15 @@ drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
 
 [traps]
 
-[traps.MEVtrap]
-path = "out/MEVTrap.sol/MEVTrap.json"
-response_contract = "0xAD8e31Da04D1dE260854B97f9f49d7945e4e9032"
-response_function = "logSandwich(uint256,address,address,address,address,uint256,uint256,bytes32,bytes32,bytes32)"
+[traps.ERC20WhaleTrap]
+path = "out/ERC20WhaleTrap.sol/ERC20WhaleTrap.json"
+response_contract = "0xa8BA78600245b057FCf6682871F3eF4d11116eB9"
+response_function = "whaleResponse(address,uint256,uint256,int256,int256)"
 cooldown_period_blocks = 2
 min_number_of_operators = 1
 max_number_of_operators = 2
 block_sample_size = 3
 private = true
 whitelist = []
+address = "0xf7930b2D05Db1dDbc978547A2A4b3d574B287444"
 
